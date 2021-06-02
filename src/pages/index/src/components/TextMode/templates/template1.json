@@ -1,0 +1,1253 @@
+{
+  "time": null,
+  "template": [{
+    "id": "cc2cdbea-03bc-4364-b1f4-17965dd34408",
+    "name": "sheet",
+    "droppable": true,
+    "children": [{
+      "id": "7a294642-d400-44d5-8a04-f8c6662522b1",
+      "name": "sheet",
+      "droppable": true,
+      "children": [{
+        "id": "22debb6b-86fb-4ade-b898-607e7620e466",
+        "slot": "fullName",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            "0",
+            8,
+            "0",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "30",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontWeight": "700"
+        },
+        "config": {
+          "value": ""
+        }
+      },
+        {
+          "id": "f6648653-fe07-47c9-b8ef-c0b65d12e135",
+          "name": "paragraph",
+          "slot": "jobPosition",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "4",
+              8,
+              8,
+              8
+            ],
+            "lineHeight": "inherit",
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": true,
+            "backgroundInherit": true,
+            "lineHeightInherit": true,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#808080FF",
+            "fontSize": "inherit",
+            "background": "inherit",
+            "col": 12
+          },
+          "config": {
+            "value": ""
+          }
+        }
+      ],
+      "styleConfig": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "padding": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "lineHeight": 24,
+        "letterSpacing": 1,
+        "colorInherit": false,
+        "fontSizeInherit": false,
+        "backgroundInherit": false,
+        "lineHeightInherit": false,
+        "letterSpacingInherit": false,
+        "width": "100%",
+        "height": "auto",
+        "color": "var(--text-primary)",
+        "fontSize": 16,
+        "background": "var(--background-color)",
+        "col": 8
+      },
+      "config": {},
+      "pin": false
+    },
+      {
+        "id": "456b96dc-2741-4b2f-825a-b62f75128099",
+        "name": "sheet",
+        "droppable": true,
+        "children": [{
+          "id": "232d0eb4-1ebf-4c92-957c-11986a2d06ac",
+          "name": "image",
+          "slot": "avatar",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "lineHeight": "inherit",
+            "letterSpacing": "inherit",
+            "colorInherit": true,
+            "fontSizeInherit": true,
+            "backgroundInherit": true,
+            "lineHeightInherit": true,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "inherit",
+            "fontSize": "inherit",
+            "background": "inherit",
+            "col": 12,
+            "position": "absolute"
+          },
+          "config": {
+            "value": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQUFBAYFBQUHBgYHCQ8KCQgICRMNDgsPFhMXFxYTFRUYGyMeGBohGhUVHikfISQlJygnGB0rLismLiMmJyb/wgALCAB4AHgBAREA/8QAGwABAAMBAQEBAAAAAAAAAAAAAAQFBgMBAgf/2gAIAQEAAAAA/ewAAHGG7ywDymrRPtJIEPPgmaACspgfepArKYHurAh58EnRgVVQCRpAIudBY3YCkrg0/UBGzgm34B85UWV0A8rqUd7/ALB5AquAEuxn+8aGOAHe8//EAC8QAAEDAgQFAQcFAAAAAAAAAAECAwQFEQASIDAhIjFBUSMQEzJSYXGhM0BCYnL/2gAIAQEAAT8A/aPSWGR6jgB8d8KqzAPBtZwKsx3bWMM1CK6QA5lPhXDbnVFalFtg5UjqvucEkm5NzoZqbzTSWwhKsotc4gykymiq2VSeChsVR0tQ126q5ddKdLcxI7L5TsVw+g2PKtcc5X21eFDYrg9Bs/21o+NP3GxVfdGIpLigknin7jXTmS9KQOyTmOxXU8jSvBI104EzWredipNe9huDunmGuhozSFr+VOzWWMjqXEgBChbh50gEkAdTiO0GmUoAAIAvsz2Q9FcT3AuNNIbDkwE9EDNtOEJbUT0A00L9Z3/I2SQMVGc0GVstKzrULEjoNMKQYz4ctcdCPphiQy+LtrB+nfUSALkgAYk1Nlu6WvUV+MSJT759RfD5RwGsEg3BthioSWv55x4ViNU2XODo90r8YBBFwbj2SpDcZvOs/YecSpbsk85sjskdNyNKejn018vynpiFLRKbJAyqT8Scf//Z",
+            "position": "absolute",
+            "top": 0,
+            "right": 0,
+            "width": "100",
+            "height": "100",
+            "borderTopWidth": 0,
+            "borderRightWidth": 0,
+            "borderBottomWidth": 0,
+            "borderLeftWidth": 0,
+            "borderColor": "#888",
+            "borderRadius": 4,
+            "borderStyle": "solid"
+          },
+          "pin": false
+        }],
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "lineHeight": 24,
+          "letterSpacing": 1,
+          "colorInherit": false,
+          "fontSizeInherit": false,
+          "backgroundInherit": false,
+          "lineHeightInherit": false,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "var(--text-primary)",
+          "fontSize": 16,
+          "background": "var(--background-color)",
+          "col": 3
+        },
+        "config": {},
+        "pin": false
+      },
+      {
+        "id": "7714d517-7146-4a5b-a1ba-1dc2c9f2d037",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            "20",
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            8,
+            8,
+            "4",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "20",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontWeight": "700"
+        },
+        "config": {
+          "value": "Profile"
+        }
+      },
+      {
+        "id": "a0e6a923-6249-4bfe-b397-da3730b65d57",
+        "name": "paragraph",
+        "slot": "description",
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            "4",
+            8,
+            8,
+            8
+          ],
+          "lineHeight": "18",
+          "letterSpacing": "0",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": false,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "13",
+          "background": "inherit",
+          "col": 12
+        },
+        "config": {
+          "value": ""
+        }
+      },
+      {
+        "id": "b3887a7e-7a5b-4ce4-91b3-94742e856d34",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            "20",
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            8,
+            8,
+            "4",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "20",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontWeight": "700"
+        },
+        "config": {
+          "value": "Employment History"
+        }
+      },
+      {
+        "id": "5f3af9dc-a915-471f-8c73-8c3ff3aaca34",
+        "slot": "employments",
+        "name": "sheet",
+        "droppable": true,
+        "children": [{
+          "id": "0a5d1a1f-e33f-4794-9cb1-5ea3f60b49dd",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "4",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": "16",
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#000000FF",
+            "fontSize": "13",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "company",
+          "config": {
+            "value": ""
+          }
+        },
+          {
+            "id": "a8759382-e2f6-4025-8f09-a746c43cf44c",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                0,
+                8,
+                0,
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "inherit",
+              "colorInherit": false,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": false,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#838283FF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "jobPosition",
+            "config": {
+              "value": ""
+            }
+          },
+          {
+            "id": "a5222382-e2f6-4025-8f09-a746c43cf44c",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                0,
+                8,
+                4,
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "inherit",
+              "colorInherit": false,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": false,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#838283FF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "period",
+            "config": {
+              "value": ""
+            }
+          },
+          {
+            "id": "17c0ffc8-390d-4b0b-ac8c-b0d7b7c1de76",
+            "name": "list",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                0,
+                0,
+                0,
+                36
+              ],
+              "lineHeight": "18",
+              "letterSpacing": "0",
+              "colorInherit": true,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": false,
+              "letterSpacingInherit": false,
+              "width": "100%",
+              "height": "auto",
+              "color": "inherit",
+              "fontSize": "13",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "description",
+            "config": {
+              "value": [
+
+              ],
+              "listStyle": "disc",
+              "dense": true
+            }
+          }
+        ],
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "lineHeight": 24,
+          "letterSpacing": 1,
+          "colorInherit": false,
+          "fontSizeInherit": false,
+          "backgroundInherit": false,
+          "lineHeightInherit": false,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "var(--text-primary)",
+          "fontSize": 16,
+          "background": "var(--background-color)",
+          "col": 12
+        },
+        "config": {}
+      },
+      {
+        "id": "ea2be597-4a85-49c7-91a4-e9bb9c599ae4",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            "20",
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            8,
+            8,
+            "4",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "20",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontWeight": "700",
+          "fontStyleInherit": true,
+          "fontStyle": "inherit"
+        },
+        "config": {
+          "value": "Education"
+        }
+      },
+      {
+        "id": "51b20d86-4d3d-4d5e-8715-18fb56e9adbd",
+        "name": "sheet",
+        "droppable": true,
+        "slot": "educations",
+        "children": [
+          {
+          "id": "30bea0d5-8574-4c60-acb2-22dd6be3e9a3",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": "20",
+            "letterSpacing": "0",
+            "colorInherit": true,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": false,
+            "width": "100%",
+            "height": "auto",
+            "color": "inherit",
+            "fontSize": "14",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "school",
+          "config": {
+            "value": ""
+          }
+        },
+          {
+            "id": "d148a44a-2834-42a7-8522-fdb8a6e93007",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "0",
+                8,
+                "0",
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "inherit",
+              "colorInherit": false,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": true,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#818181FF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "degree",
+            "config": {
+              "value": ""
+            }
+          },
+          {
+            "id": "d1487845-2834-42a7-8522-fdb8a6e93007",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "0",
+                8,
+                "0",
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "inherit",
+              "colorInherit": false,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": true,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#818181FF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "period",
+            "config": {
+              "value": ""
+            }
+
+          },
+          {
+            "id": "d1745123-2834-42a7-8522-fdb8a6e93007",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "0",
+                8,
+                "0",
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "inherit",
+              "colorInherit": false,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": true,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#818181FF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "description",
+            "config": {
+              "value": ""
+            }
+          }
+        ],
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "borderTopWidth": 0,
+          "borderRightWidth": 0,
+          "borderBottomWidth": 0,
+          "borderLeftWidth": 0,
+          "borderColor": "#888",
+          "borderRadius": 4,
+          "borderStyle": "solid",
+          "position": "static",
+          "top": "auto",
+          "left": "auto",
+          "right": "auto",
+          "bottom": "auto",
+          "lineHeight": 24,
+          "letterSpacing": 1,
+          "textAlign": "inherit",
+          "fontWeight": "400",
+          "fontStyle": "normal",
+          "colorInherit": false,
+          "fontSizeInherit": false,
+          "backgroundInherit": false,
+          "lineHeightInherit": false,
+          "letterSpacingInherit": false,
+          "textAlignInherit": true,
+          "fontWeightInherit": false,
+          "fontStyleInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "#000000de",
+          "fontSize": 16,
+          "background": "#ffffffff",
+          "col": 12
+        },
+        "config": {},
+        "pin": false
+      },
+      {
+        "id": "9b3f4621-1df2-48b9-8559-725090084f5f",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            "20",
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            8,
+            8,
+            "4",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "20",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontWeight": "700"
+        },
+        "config": {
+          "value": "Projects"
+        }
+      },
+      {
+        "id": "f0363b5f-0306-4bbe-82d8-2d0a7fcf479e",
+        "name": "sheet",
+        "droppable": true,
+        "slot": "projects",
+        "children": [{
+          "id": "dba90a8c-57bd-4942-8a03-212cca773142",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": "inherit",
+            "letterSpacing": "inherit",
+            "colorInherit": true,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": true,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "inherit",
+            "fontSize": "14",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "name",
+          "config": {
+            "value": ""
+          }
+        },
+          {
+            "id": "c8666efb-de47-4e8b-a4d5-0d59ac554307",
+            "name": "anchor",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "0",
+                8,
+                "0",
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "0",
+              "colorInherit": false,
+              "fontSizeInherit": true,
+              "backgroundInherit": true,
+              "lineHeightInherit": false,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "#5D7CFFFF",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "link",
+            "config": {
+              "value": "",
+              "href": "",
+              "textDecoration": "underline"
+            }
+          },
+          {
+            "id": "dba41237-57bd-4942-8a03-212cca773142",
+            "name": "paragraph",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "0",
+                8,
+                "0",
+                8
+              ],
+              "lineHeight": "14",
+              "letterSpacing": "0",
+              "colorInherit": true,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": true,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "inherit",
+              "fontSize": "12",
+              "background": "inherit",
+              "col": 12
+            },
+            "slot": "description",
+            "config": {
+              "value": ""
+            }
+          }
+        ],
+        "styleConfig": {
+          "margin": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "lineHeight": 24,
+          "letterSpacing": 1,
+          "colorInherit": false,
+          "fontSizeInherit": false,
+          "backgroundInherit": false,
+          "lineHeightInherit": false,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "var(--text-primary)",
+          "fontSize": 16,
+          "background": "var(--background-color)",
+          "col": 12
+        },
+        "config": {}
+      }
+    ],
+    "styleConfig": {
+      "margin": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "padding": [
+        "72",
+        "16",
+        0,
+        "84"
+      ],
+      "lineHeight": 24,
+      "letterSpacing": 1,
+      "colorInherit": false,
+      "fontSizeInherit": false,
+      "backgroundInherit": false,
+      "lineHeightInherit": false,
+      "letterSpacingInherit": false,
+      "width": "100%",
+      "height": "100%",
+      "color": "var(--text-primary)",
+      "fontSize": 16,
+      "background": "var(--background-color)",
+      "col": 8
+    },
+    "config": {}
+  },
+    {
+      "id": "93dad411-f8b2-4361-9dac-6a41b85aee80",
+      "name": "sheet",
+      "droppable": true,
+      "children": [{
+        "id": "b2e0836e-b066-4665-9c36-3177e8b43978",
+        "name": "paragraph",
+        "styleConfig": {
+          "margin": [
+            "20",
+            0,
+            0,
+            0
+          ],
+          "padding": [
+            8,
+            8,
+            "4",
+            8
+          ],
+          "lineHeight": "inherit",
+          "letterSpacing": "-1",
+          "colorInherit": true,
+          "fontSizeInherit": false,
+          "backgroundInherit": true,
+          "lineHeightInherit": true,
+          "letterSpacingInherit": false,
+          "width": "100%",
+          "height": "auto",
+          "color": "inherit",
+          "fontSize": "20",
+          "background": "inherit",
+          "col": 12,
+          "fontWeightInherit": false,
+          "fontStyleInherit": true,
+          "fontStyle": "inherit",
+          "fontWeight": "700"
+        },
+        "config": {
+          "value": "Details"
+        }
+      },
+        {
+          "id": "25aa3270-7c93-4b26-bf01-51d977bc5847",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": 24,
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#EBEBEBFF",
+            "fontSize": "13",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "city",
+          "config": {
+            "value": ""
+          }
+        },
+        {
+          "id": "629b6f10-d6f1-4fd6-9079-26024f1c5406",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": 24,
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#EBEBEBFF",
+            "fontSize": "13",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "country",
+          "config": {
+            "value": ""
+          }
+        },
+        {
+          "id": "b80feff5-23c0-4f24-96f4-7720e38093c2",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              8
+            ],
+            "lineHeight": 24,
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#EBEBEBFF",
+            "fontSize": "13",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "phone",
+          "config": {
+            "value": ""
+          }
+        },
+        {
+          "id": "83195065-31e3-4497-adfa-41667f0d3e85",
+          "name": "anchor",
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              "0",
+              8,
+              "0",
+              "6"
+            ],
+            "lineHeight": "20",
+            "letterSpacing": "inherit",
+            "colorInherit": false,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": true,
+            "width": "100%",
+            "height": "auto",
+            "color": "#5D7CFFFF",
+            "fontSize": "12",
+            "background": "inherit",
+            "col": 12
+          },
+          "slot": "email",
+          "config": {
+            "value": "",
+            "href": "",
+            "textDecoration": "underline"
+          }
+        },
+        {
+          "id": "4cf957af-6314-4aed-9e5f-52353f53698d",
+          "name": "paragraph",
+          "styleConfig": {
+            "margin": [
+              "20",
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              8,
+              8,
+              "4",
+              8
+            ],
+            "lineHeight": "inherit",
+            "letterSpacing": "-1",
+            "colorInherit": true,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": true,
+            "letterSpacingInherit": false,
+            "width": "100%",
+            "height": "auto",
+            "color": "inherit",
+            "fontSize": "20",
+            "background": "inherit",
+            "col": 12,
+            "fontWeightInherit": false,
+            "fontWeight": "700"
+          },
+          "config": {
+            "value": "Skills"
+          }
+        },
+        {
+          "id": "bffb3113-965d-449f-9c84-b4f42b35c40a",
+          "name": "sheet",
+          "slot": "skills",
+          "droppable": true,
+          "children": [{
+            "id": "586662ca-3148-472f-9625-781286d4c891",
+            "name": "progress",
+            "styleConfig": {
+              "margin": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "padding": [
+                "4",
+                "0",
+                "8",
+                "8"
+              ],
+              "lineHeight": "inherit",
+              "letterSpacing": "inherit",
+              "colorInherit": true,
+              "fontSizeInherit": false,
+              "backgroundInherit": true,
+              "lineHeightInherit": true,
+              "letterSpacingInherit": true,
+              "width": "100%",
+              "height": "auto",
+              "color": "inherit",
+              "fontSize": "13",
+              "background": "inherit",
+              "col": 10
+            },
+            "slot": "progress",
+            "config": {
+              "label": "",
+              "value": "",
+              "total": 100,
+              "rounded": true,
+              "height": "4",
+              "valueColor": "#FFFFFFFF",
+              "backgroundColor": "#757575FF"
+            }
+          }],
+          "styleConfig": {
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "padding": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "lineHeight": "20",
+            "letterSpacing": "0",
+            "colorInherit": true,
+            "fontSizeInherit": false,
+            "backgroundInherit": true,
+            "lineHeightInherit": false,
+            "letterSpacingInherit": false,
+            "width": "100%",
+            "height": "auto",
+            "color": "inherit",
+            "fontSize": "13",
+            "background": "inherit",
+            "col": 12
+          },
+          "config": {}
+        }
+      ],
+      "styleConfig": {
+        "margin": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "padding": [
+          "134",
+          0,
+          0,
+          "36"
+        ],
+        "lineHeight": 24,
+        "letterSpacing": 1,
+        "colorInherit": false,
+        "fontSizeInherit": false,
+        "backgroundInherit": false,
+        "lineHeightInherit": false,
+        "letterSpacingInherit": false,
+        "width": "100%",
+        "height": "100%",
+        "color": "#FFFFFFFF",
+        "fontSize": 16,
+        "background": "#1F1E41FF",
+        "col": 4
+      },
+      "config": {}
+    }
+  ],
+  "version": "0.0.1",
+  "name": "template-1"
+}

@@ -1,0 +1,10 @@
+<main>
+    <div id="root" data-config="<%= JSON.stringify(pageConfig)%>">
+        Cur page name:<%= folderLocalesName1+'|'+folderLocalesName2+'|'+pageLocalesName %>
+    </div>
+</main>
+<script>
+    window.pageConfig = <%= typeof pageConfig=="undefined" ? null : JSON.stringify(pageConfig) %>
+    <!--window.curLang = <%= typeof curLang=="undefined" ? null : JSON.stringify(curLang) %>-->
+    <!--window.language = <%= typeof language=="undefined" ? null : JSON.stringify(language) %>-->
+</script>

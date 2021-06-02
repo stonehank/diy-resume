@@ -1,0 +1,20 @@
+body{
+  transition: all .3s linear;
+  background-color:var(--background-color);
+  color:var(--text-secondary)
+}
+html{
+  overflow-y:auto !important;
+}
+a {
+  color:var(--text-primary);
+  &:link {color:var(--text-primary)}
+  &:visited {color:var(--text-primary)}
+  &:hover {color:var(--theme-primary)}
+  &:active {color:var(--text-primary)}
+}
+
+
+.v-application--wrap{
+  min-height:auto !important;
+}

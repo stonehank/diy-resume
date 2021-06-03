@@ -21,7 +21,8 @@ Vue.use(Router)
 const router = new Router({
     linkActiveClass: 'active',
     routes,
-    mode: 'history'
+    mode: 'history',
+    base:'/diy-resume-demo/'
 })
 
 Vue.use(VueMq, {

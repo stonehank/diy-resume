@@ -37,7 +37,7 @@
             }
         },
         mounted(){
-            this.showCookieInfo=show
+            this.showCookieInfo=true
             // getFromCache(COOKIE_INFO_SHOW).then((show)=>{
             //     if(show==null){
             //         show=true

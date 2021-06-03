@@ -37,15 +37,16 @@
             }
         },
         mounted(){
-            getFromCache(COOKIE_INFO_SHOW).then((show)=>{
-                if(show==null){
-                    show=true
-                }
-                this.showCookieInfo=show
-                if(show){
-                    setCache(COOKIE_INFO_SHOW,false)
-                }
-            })
+            this.showCookieInfo=show
+            // getFromCache(COOKIE_INFO_SHOW).then((show)=>{
+            //     if(show==null){
+            //         show=true
+            //     }
+            //     this.showCookieInfo=show
+            //     if(show){
+            //         setCache(COOKIE_INFO_SHOW,false)
+            //     }
+            // })
         },
     }
 </script>

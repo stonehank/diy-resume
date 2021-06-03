@@ -5,7 +5,7 @@ const contentSuffix=require('./content-suffix.ejs')
 
 module.exports = function buildPage(templateParams) {
   const language = templateParams.curLang
-  const { author,publicPath,pageLocalesName,folderLocalesName1,folderLocalesName2,customPageConfig } = templateParams
+  const { author,publicPath,pageLocalesName,folderLocalesName1,folderLocalesName2,customPageConfig,isDev } = templateParams
   return layout.run({
     author,
     customPageConfig,
@@ -17,5 +17,6 @@ module.exports = function buildPage(templateParams) {
     pageLocalesName,
     folderLocalesName1,
     folderLocalesName2,
+    isDev
   })
 }

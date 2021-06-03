@@ -2,7 +2,7 @@ module.exports={
   "author": "stonehank",
   "authorDescription": "stonehank.github.io",
   "outputPath": "dist",
-  "publicPath": "./",
+  "publicPath": "/diy-resume-demo/",
   "deepFolderPrefix": "folder-",
   "notTransPrefix": "not-translate-",
   "notPagePrefix": "_"

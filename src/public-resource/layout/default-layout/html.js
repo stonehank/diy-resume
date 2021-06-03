@@ -31,7 +31,7 @@ function resolve(langObj,keyArr,idx,defaultMeta){
 const moduleExports = {
   run({
     contentPrefix,content,contentSuffix, language, publicPath, folderLocalesName1=null,folderLocalesName2=null,
-        pageLocalesName,author,customPageConfig
+        pageLocalesName,author,customPageConfig,isDev
   }={}) {
     const $t = locales[language]
     let defaultMeta=createDefaultMeta(folderLocalesName1,folderLocalesName2,pageLocalesName,author)
@@ -40,6 +40,9 @@ const moduleExports = {
     metaConfig.lang = isoCode[language]
 
     let prefixPath=publicPath+(language===primaryLang ? "" : languageUrlStr[language] )
+    if(prefixPath.endsWith('/')){
+      prefixPath=prefixPath.slice(0,prefixPath.length-1)
+    }
     let params={
       author,
       curLang:curPageLang,
@@ -51,6 +54,7 @@ const moduleExports = {
       folderLocalesName1,
       folderLocalesName2,
       $t,
+      isDev,
     }
     const renderData = {
       contentPrefix: contentPrefix({lang: curPageLang, ...params}),

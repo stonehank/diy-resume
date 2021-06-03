@@ -94,11 +94,12 @@ function resolveFlat(page,langList,fullPagePath){
       templateParameters: {
         author:fullAuthor,
         curLang: lang,
-        publicPath: publicPath==='./' ? '.' : publicPath,
+        publicPath: isDev ? '/' : publicPath,
         folderLocalesName1:null,
         folderLocalesName2:null,
         pageLocalesName:page,
-        customPageConfig
+        customPageConfig,
+        isDev
       },
       chunks: [page, 'commons', 'libs', 'manifest']
     })
@@ -133,11 +134,12 @@ function resolveDeep(pathArr,langList){
       templateParameters: {
         author:fullAuthor,
         curLang: lang,
-        publicPath: publicPath==='./' ? '.' : publicPath,
+        publicPath: isDev ? '/' : publicPath,
         folderLocalesName1:folderName1,
         folderLocalesName2:folderName2,
         pageLocalesName:pageName,
-        customPageConfig
+        customPageConfig,
+        isDev
       },
       chunks: chunks
     })

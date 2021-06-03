@@ -5,6 +5,5 @@
 </main>
 <script>
     window.pageConfig = <%= typeof pageConfig=="undefined" ? null : JSON.stringify(pageConfig) %>
-    <!--window.curLang = <%= typeof curLang=="undefined" ? null : JSON.stringify(curLang) %>-->
-    <!--window.language = <%= typeof language=="undefined" ? null : JSON.stringify(language) %>-->
+    window.isDev = <%= typeof isDev=="undefined" ? null : JSON.stringify(isDev) %>
 </script>

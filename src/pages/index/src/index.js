@@ -17,12 +17,12 @@ Vue.use(VueStore)
 Vue.directive('frag', frag)
 Vue.use(VModal)
 Vue.use(Router)
-
+console.log(window.isDev)
 const router = new Router({
     linkActiveClass: 'active',
     routes,
     mode: 'history',
-    base:'/diy-resume-demo/'
+    base: window.isDev===false ? '/diy-resume-demo/' : '/'
 })
 
 Vue.use(VueMq, {

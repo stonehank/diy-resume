@@ -11,7 +11,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: isDev ? 'assets/js/[name].js' : 'assets/js/[name].[contenthash:8].js',
-    publicPath: publicPath === '' ? '/' : publicPath
+    publicPath: isDev ? '/' : (publicPath === '' ? '/' : publicPath)
   },
 
   resolve: require('./webpack-config/resolve.config.js'),

@@ -103,7 +103,7 @@ module.exports= {
                 esModule: false,  // https://github.com/vuejs/vue-loader/issues/1612
                 limit: isDev ? 0 : 4096,
                 name: 'assets/images/[name]-[contenthash:8].[ext]',
-                publicPath: publicPath==='./' ? publicPath : publicPath+'/'
+                publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
               },
             },
           ],
@@ -117,7 +117,7 @@ module.exports= {
               loader: 'file-loader',
               options: {
                 name: 'assets/font/[name]-[contenthash:8].[ext]',
-                publicPath: publicPath==='./' ? publicPath : publicPath+'/'
+                publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
               },
             },
           ],
@@ -130,7 +130,7 @@ module.exports= {
               loader: 'file-loader',
               options: {
                 name: 'assets/vector/[name]-[contenthash:8].[ext]',
-                publicPath: publicPath==='./' ? publicPath : publicPath+'/'
+                publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
               },
             },
           ],
@@ -143,7 +143,7 @@ module.exports= {
               loader: 'file-loader',
               options: {
                 name: 'assets/images/[name].[ext]',
-                publicPath: publicPath==='./' ? publicPath : publicPath+'/'
+                publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
               },
             },
           ],
@@ -153,7 +153,7 @@ module.exports= {
           exclude: [/\.(js|mjs|jsx|ts|tsx|vue)$/i, /\.html$/i, /\.json$/i],
           options: {
             name: 'static/[name].[contenthash:8].[ext]',
-            publicPath: publicPath==='./' ? publicPath : publicPath+'/'
+            publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
           },
         },
       ]

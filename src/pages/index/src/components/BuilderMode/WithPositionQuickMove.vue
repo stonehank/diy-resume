@@ -33,6 +33,7 @@
             // fetch from real DOM to calculate the value when is 'auto'
             let $moveEle=$('#'+this.newComponentData.id)
             let [top,right,bottom,left]=this.calcGap($moveEle)
+            console.log([top,right,bottom,left])
             this.startX=left
             this.startY=top
             $ele.on('mousedown',this.onMousedown)
@@ -82,6 +83,7 @@
                 this.startDrag=true
                 this.downX=ev.clientX
                 this.downY=ev.clientY
+                console.log('down:',this.downX,this.downY)
                 $(document).on('mousemove',this.throttleMousemove)
             },
             onMousemove(ev){
@@ -102,10 +104,12 @@
                 // console.log('mouseup')
                 // console.log(ev.target)
                 // if($(ev.target).parents('#'+this.newComponentData.id).length===0)return
+                if(!this.startDrag)return
                 this.startDrag=false
                 $(document).off('mousemove',this.throttleMousemove)
                 let endX=ev.clientX-this.downX
                 let endY=ev.clientY-this.downY
+                console.log('up:',endX,endY,this.downX,this.downY)
                 this.startX+=endX
                 this.startY+=endY
                 this.downX=null

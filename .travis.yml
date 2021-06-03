@@ -26,5 +26,5 @@ branches:
     - master
 env:
   global:
-     - GH_REF: github.com/stonehank/diy-resume
+     - GH_REF: github.com/stonehank/diy-resume-demo
      - P_BRANCH: gh-pages

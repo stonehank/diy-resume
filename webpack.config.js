@@ -24,9 +24,7 @@ module.exports = {
 
   module: require('./webpack-config/module.config.js'),
 
-  stats:isDev ? 'errors-only' : {
-    all:false
-  },
+  stats:'errors-only',
 
   devServer: isDev ? {
     noInfo: true,

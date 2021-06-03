@@ -94,7 +94,7 @@ function resolveFlat(page,langList,fullPagePath){
       templateParameters: {
         author:fullAuthor,
         curLang: lang,
-        publicPath: publicPath,
+        publicPath: publicPath==='./' ? '.' : publicPath,
         folderLocalesName1:null,
         folderLocalesName2:null,
         pageLocalesName:page,
@@ -133,7 +133,7 @@ function resolveDeep(pathArr,langList){
       templateParameters: {
         author:fullAuthor,
         curLang: lang,
-        publicPath: publicPath,
+        publicPath: publicPath==='./' ? '.' : publicPath,
         folderLocalesName1:folderName1,
         folderLocalesName2:folderName2,
         pageLocalesName:pageName,

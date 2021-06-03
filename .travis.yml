@@ -23,7 +23,7 @@ after_script:
 
 branches:
   only:
-    - master
+    - main
 env:
   global:
      - GH_REF: github.com/stonehank/diy-resume-demo

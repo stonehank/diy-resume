@@ -4,7 +4,7 @@
 
 ### Live
 
-[try live ]()
+[try live]()
 
 ### Feature
 
@@ -23,3 +23,5 @@ Typing your personal information and choose a template.
 > only support desktop view
 
 Use drag & drop to build/modify your resume.
+
+### Information

@@ -1,13 +1,11 @@
 <template>
-    <main class="diy-wrapper">
-        <v-app >
-            <transition name="fade">
-                <router-view style="transition:.5s;" ></router-view>
-            </transition>
-            <div id="taskInfoModalWrap"></div>
-            <div id="hidden-page"></div>
-        </v-app>
-    </main>
+    <v-app class="diy-wrapper">
+        <transition name="fade">
+            <router-view style="transition:.5s;" ></router-view>
+        </transition>
+        <div id="taskInfoModalWrap"></div>
+        <div id="hidden-page"></div>
+    </v-app>
 </template>
 
 <script>

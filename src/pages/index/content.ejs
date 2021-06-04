@@ -6,4 +6,5 @@
 <script>
     window.pageConfig = <%= typeof pageConfig=="undefined" ? null : JSON.stringify(pageConfig) %>
     window.isDev = <%= typeof isDev=="undefined" ? null : JSON.stringify(isDev) %>
+    window.publicPath = <%= typeof publicPath=="undefined" ? null : JSON.stringify(publicPath) %>
 </script>

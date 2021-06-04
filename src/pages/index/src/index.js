@@ -22,7 +22,7 @@ const router = new Router({
     linkActiveClass: 'active',
     routes,
     mode: 'history',
-    base: window.isDev===false ? '/diy-resume-demo/' : '/'
+    base: window.isDev===false ? window.publicPath : '/'
 })
 
 Vue.use(VueMq, {

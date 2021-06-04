@@ -13,6 +13,7 @@ script:
 after_script:
   - mv -f README.md dist
   - git clone "https://${GH_TOKEN}@${GH_REF}" demo
+  - rm -rf demo/assets
   - cp -R dist/* demo/
   - cd ./demo
   - git config user.name "stonehank"

@@ -5,7 +5,7 @@
             :no-pa-ma="true"
             :no-border="true"
             v-model="curData"
-            class="pa-2"
+            style="padding:8px;"
     >
         <template v-slot:default>
             <div class="style-wrapper"

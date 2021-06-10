@@ -3,7 +3,7 @@
             :no-pa-ma="true"
             :no-border="true"
             :componentData="componentData"
-            class="pa-2"
+            style="padding:8px;"
     >
         <div
                 class="style-wrapper"

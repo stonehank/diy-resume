@@ -4,6 +4,7 @@ module.exports={
   extensions: ['.js','.vue'],
     alias: {
       "react-is": path.resolve(dirVars.staticRootDir, 'node_modules/react-is'),
+      "html2canvas": path.resolve(dirVars.staticRootDir, 'node_modules/html2canvas'),
       localesDir: dirVars.localesDir,
       vendorDir: dirVars.vendorDir,
       assetsDir: dirVars.assetsDir,

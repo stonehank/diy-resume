@@ -49,9 +49,13 @@
             beforeExport(){
                 // need to scroll to avoid blank, https://github.com/niklasvh/html2canvas/issues/2440#issuecomment-760386632
                 window.scrollTo(0, 0)
-                let $exportEle=$('#preview-export').clone(true,true)
-                $exportEle.css({
+                let $ele=$('#preview-export').clone(true,true)
+                let $exportEle=$('<div class="diy-export-wrapper"></div>')
+                $exportEle.append($ele)
+                $ele.css({
                     transform:'scale(1)',
+                })
+                $exportEle.css({
                     position: 'fixed',
                     zIndex: -999,
                     left: 0,

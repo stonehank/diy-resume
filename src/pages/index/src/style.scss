@@ -4,34 +4,46 @@ $a4Height:29.68cm;
 $gapOffset:16px;
 $toolsWrapperW:280px;
 
-.theme--light.v-application{
-  background:#f2f2f2 !important;
-}
 
-//body{
-//  font-family:Roboto-Regular !important;
-//}
+.diy-wrapper, .diy-export-wrapper {
 
-#hidden-page{
-  position:absolute;
-  top:-9999999px;
-  left:-999999px;
-  visibility: hidden;
-  opacity:0;
-  user-select: none;
-  pointer-events: none;
-  z-index:-9999999999;
-  width: $a4Width;
-  height: $a4Height;
-  display: block;
-}
-//.diy-wrapper{
-  *:not([class*=fa-]){
-    font-family:inherit;
+  .theme--light.v-application {
+    background: #f2f2f2 !important;
   }
 
-  [class*=handle-]{
-    cursor:pointer;
+
+  *:not([class*=fa-]) {
+    font-family: inherit;
+  }
+
+  label:not(.v-label) {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-secondary);
+    margin-top: 4px;
+  }
+
+  h2 {
+    margin: 4px 0;
+    text-align: center;
+  }
+
+  [class*=handle-] {
+    cursor: pointer;
+  }
+
+  #hidden-page{
+    position:absolute;
+    top:-9999999px;
+    left:-999999px;
+    visibility: hidden;
+    opacity:0;
+    user-select: none;
+    pointer-events: none;
+    z-index:-9999999999;
+    width: $a4Width;
+    height: $a4Height;
+    display: block;
   }
 
   .section-with-appbar{
@@ -42,17 +54,6 @@ $toolsWrapperW:280px;
   }
   .control-bar{
     min-width:calc((100% - #{$a4Width}) / 2 - #{$gapOffset});
-  }
-
-  label:not(.v-label){
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--text-secondary);
-    margin-top: 4px;
-  }
-  h2{
-    margin:4px 0;
-    text-align: center;
   }
 
   .draggable-custom-item{
@@ -219,21 +220,33 @@ $toolsWrapperW:280px;
       border-radius: inherit;
     }
   }
-//}
+  //}
 
 
-.sm-width{
-  width:60px !important;
-}
-.md-width{
-  width:80px !important;
-}
-
-.modal-drag-handle{
-  cursor:grab;
-  font-size: 14px;
-  padding: 8px;
-  &:active{
-    cursor:grabbing;
+  .sm-width{
+    width:60px !important;
   }
+  .md-width{
+    width:80px !important;
+  }
+
+  .modal-drag-handle{
+    cursor:grab;
+    font-size: 14px;
+    padding: 8px;
+    &:active{
+      cursor:grabbing;
+    }
+  }
+
+
 }
+
+
+
+
+
+
+
+
+

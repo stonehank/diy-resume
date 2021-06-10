@@ -65,7 +65,7 @@
 </template>
 
 <script>
-    import fontList from 'jsDir/fontAwesomeList'
+    import fontList from '../../../../utils/fontAwesomeList'
     export default {
         name: "TextInputWithIcon",
         props:{

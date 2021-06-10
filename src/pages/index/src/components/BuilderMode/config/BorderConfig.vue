@@ -35,7 +35,7 @@
                         suffix="px"
                         :id="newComponentData.id"
                         label="Top Left"
-                        static-text="Circle"
+                        static-text="50%"
                         :show-static-text="isTopLeftCircleBorder"
                         v-model="newComponentData.styleConfig.borderTopLeftRadius"
                         css-type="borderTopLeftRadius"
@@ -56,7 +56,7 @@
                         suffix="px"
                         :id="newComponentData.id"
                         label="Top Left"
-                        static-text="Circle"
+                        static-text="50%"
                         :show-static-text="isTopRightCircleBorder"
                         v-model="newComponentData.styleConfig.borderTopRightRadius"
                         css-type="borderTopRightRadius"
@@ -77,7 +77,7 @@
                         suffix="px"
                         :id="newComponentData.id"
                         label="Bottom Right"
-                        static-text="Circle"
+                        static-text="50%"
                         :show-static-text="isBottomRightCircleBorder"
                         v-model="newComponentData.styleConfig.borderBottomRightRadius"
                         css-type="borderBottomRightRadius"
@@ -97,8 +97,8 @@
                         :min="0"
                         suffix="px"
                         :id="newComponentData.id"
-                        label="Top Left"
-                        static-text="Circle"
+                        label="Bottom Left"
+                        static-text="50%"
                         :show-static-text="isBottomLeftCircleBorder"
                         v-model="newComponentData.styleConfig.borderBottomLeftRadius"
                         css-type="borderBottomLeftRadius"
@@ -157,7 +157,7 @@
                 isTopLeftCircleBorder:this.componentData.styleConfig.borderTopLeftRadius==='50%',
                 isTopRightCircleBorder:this.componentData.styleConfig.borderTopRightRadius==='50%',
                 isBottomRightCircleBorder:this.componentData.styleConfig.borderBottomRightRadius==='50%',
-                isBottomLeftCircleBorder:this.componentData.styleConfig.isBottomLeftCircleBorder==='50%',
+                isBottomLeftCircleBorder:this.componentData.styleConfig.borderBottomLeftRadius==='50%',
                 borderStyleList:[
                     'solid',
                     'dashed',

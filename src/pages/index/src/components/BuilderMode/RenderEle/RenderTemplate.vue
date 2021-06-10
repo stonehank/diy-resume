@@ -52,14 +52,14 @@
                     + l+'px' + ' '
             },
             mergeBorderRadius:function(){
-                let lt=this.curData.styleConfig.borderTopLeftRadius
-                let rt=this.curData.styleConfig.borderTopRightRadius
-                let rb=this.curData.styleConfig.borderBottomRightRadius
-                let lb=this.curData.styleConfig.borderBottomLeftRadius
-                return lt==='50%' ? '50%' : lt+'px' + ' '
-                + rt==='50%' ? '50%' : rt+'px' + ' '
-                + rb==='50%' ? '50%' : rb+'px' + ' '
-                + lb==='50%' ? '50%' : lb+'px' + ' '
+                let lt=this.componentData.styleConfig.borderTopLeftRadius
+                let rt=this.componentData.styleConfig.borderTopRightRadius
+                let rb=this.componentData.styleConfig.borderBottomRightRadius
+                let lb=this.componentData.styleConfig.borderBottomLeftRadius
+                return (lt==='50%' ? '50%' : lt+'px') + ' '
+                    + (rt==='50%' ? '50%' : rt+'px') + ' '
+                    + (rb==='50%' ? '50%' : rb+'px') + ' '
+                    + (lb==='50%' ? '50%' : lb+'px') + ' '
             }
         },
 

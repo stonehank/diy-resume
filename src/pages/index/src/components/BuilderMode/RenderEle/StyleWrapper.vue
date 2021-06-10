@@ -89,7 +89,6 @@
     import BorderConfig from "../config/BorderConfig"
     import SlotConfig from "../config/SlotConfig"
     import WithPositionQuickMove from "../WithPositionQuickMove"
-    import fontList from "jsDir/fontAwesomeList"
 
 
 

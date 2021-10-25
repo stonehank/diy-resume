@@ -13,7 +13,7 @@
           "children": [
             {
               "id": "22debb6b-86fb-4ade-b898-607e7620e466",
-              "slot": "fullName",
+              "template_slug": "fullName",
               "name": "paragraph",
               "styleConfig": {
                 "margin": [
@@ -51,7 +51,7 @@
             {
               "id": "f6648653-fe07-47c9-b8ef-c0b65d12e135",
               "name": "paragraph",
-              "slot": "jobPosition",
+              "template_slug": "jobPosition",
               "styleConfig": {
                 "margin": [
                   0,
@@ -122,7 +122,7 @@
             {
               "id": "232d0eb4-1ebf-4c92-957c-11986a2d06ac",
               "name": "image",
-              "slot": "avatar",
+              "template_slug": "avatar",
               "styleConfig": {
                 "margin": [
                   0,
@@ -238,7 +238,7 @@
         {
           "id": "a0e6a923-6249-4bfe-b397-da3730b65d57",
           "name": "paragraph",
-          "slot": "description",
+          "template_slug": "description",
           "styleConfig": {
             "margin": [
               0,
@@ -308,7 +308,7 @@
         },
         {
           "id": "5f3af9dc-a915-471f-8c73-8c3ff3aaca34",
-          "slot": "employments",
+          "template_slug": "employments",
           "name": "sheet",
           "droppable": true,
           "children": [
@@ -342,7 +342,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "company",
+              "template_slug": "company",
               "config": {
                 "value": ""
               }
@@ -377,7 +377,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "jobPosition",
+              "template_slug": "jobPosition",
               "config": {
                 "value": ""
               }
@@ -412,7 +412,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "period",
+              "template_slug": "period",
               "config": {
                 "value": ""
               }
@@ -447,7 +447,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "description",
+              "template_slug": "description",
               "config": {
                 "value": [
                 ],
@@ -527,7 +527,7 @@
           "id": "51b20d86-4d3d-4d5e-8715-18fb56e9adbd",
           "name": "sheet",
           "droppable": true,
-          "slot": "educations",
+          "template_slug": "educations",
           "children": [
             {
               "id": "30bea0d5-8574-4c60-acb2-22dd6be3e9a3",
@@ -559,7 +559,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "school",
+              "template_slug": "school",
               "config": {
                 "value": ""
               }
@@ -594,7 +594,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "degree",
+              "template_slug": "degree",
               "config": {
                 "value": ""
               }
@@ -629,7 +629,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "period",
+              "template_slug": "period",
               "config": {
                 "value": ""
               }
@@ -664,7 +664,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "description",
+              "template_slug": "description",
               "config": {
                 "value": ""
               }
@@ -758,7 +758,7 @@
           "id": "f0363b5f-0306-4bbe-82d8-2d0a7fcf479e",
           "name": "sheet",
           "droppable": true,
-          "slot": "projects",
+          "template_slug": "projects",
           "children": [
             {
               "id": "dba90a8c-57bd-4942-8a03-212cca773142",
@@ -790,7 +790,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "name",
+              "template_slug": "name",
               "config": {
                 "value": ""
               }
@@ -825,7 +825,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "link",
+              "template_slug": "link",
               "config": {
                 "value": "",
                 "href": "",
@@ -862,7 +862,7 @@
                 "background": "inherit",
                 "col": 12
               },
-              "slot": "description",
+              "template_slug": "description",
               "config": {
                 "value": ""
               }
@@ -1000,7 +1000,7 @@
             "background": "inherit",
             "col": 12
           },
-          "slot": "city",
+          "template_slug": "city",
           "config": {
             "value": ""
           }
@@ -1035,7 +1035,7 @@
             "background": "inherit",
             "col": 12
           },
-          "slot": "country",
+          "template_slug": "country",
           "config": {
             "value": ""
           }
@@ -1070,7 +1070,7 @@
             "background": "inherit",
             "col": 12
           },
-          "slot": "phone",
+          "template_slug": "phone",
           "config": {
             "value": ""
           }
@@ -1105,7 +1105,7 @@
             "background": "inherit",
             "col": 12
           },
-          "slot": "email",
+          "template_slug": "email",
           "config": {
             "value": "",
             "href": "",
@@ -1151,7 +1151,7 @@
         {
           "id": "bffb3113-965d-449f-9c84-b4f42b35c40a",
           "name": "sheet",
-          "slot": "skills",
+          "template_slug": "skills",
           "droppable": true,
           "children": [
             {
@@ -1184,7 +1184,7 @@
                 "background": "inherit",
                 "col": 10
               },
-              "slot": "progress",
+              "template_slug": "progress",
               "config": {
                 "label": "",
                 "value": "",

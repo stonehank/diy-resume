@@ -63,8 +63,7 @@
                         </BorderConfig>
                     </template>
                     <template v-slot:template_config>
-                        <SlotConfig v-model="curData">
-                        </SlotConfig>
+                        <TemplateConfig v-model="curData"></TemplateConfig>
                     </template>
                     <template v-slot:actions>
                         <v-btn @click="hideConfig">Back</v-btn>
@@ -87,7 +86,7 @@
     import CommonConfig from "../config/CommonConfig"
     import PositionConfig from "../config/PositionConfig"
     import BorderConfig from "../config/BorderConfig"
-    import SlotConfig from "../config/SlotConfig"
+    import TemplateConfig from "../config/TemplateConfig"
     import WithPositionQuickMove from "../WithPositionQuickMove"
 
 
@@ -97,7 +96,7 @@
         name: "StyleWrapper",
         components: {
             WithPositionQuickMove,
-            SlotConfig,
+            TemplateConfig,
             BorderConfig,
             PositionConfig, CommonConfig, NavigationDrawer, TooltipIconBtn, ConfigEle},
         props:{

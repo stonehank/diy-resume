@@ -133,7 +133,7 @@
                         <v-btn color="success" small @click="saveConfig">Save</v-btn>
                     </template>
                     <template v-slot:template_config>
-                        <SlotConfig v-model="curData"></SlotConfig>
+                        <TemplateConfig v-model="curData"></TemplateConfig>
                     </template>
                     <template v-slot:border_config>
                         <BorderConfig v-model="curData">
@@ -158,7 +158,7 @@
     import TooltipIconBtn from "../../commons/TooltipIconBtn"
     import NavigationDrawer from "../../commons/NavigationDrawer"
     import RenderCommonElements from "./RenderCommonElements"
-    import SlotConfig from "../config/SlotConfig"
+    import TemplateConfig from "../config/TemplateConfig"
     import WithPositionQuickMove from "../WithPositionQuickMove"
     import absoluteMoveLogic from "../mixin/absoluteMoveLogic"
     import BorderConfig from "../config/BorderConfig"
@@ -183,7 +183,7 @@
         components: {
             BorderConfig,
             WithPositionQuickMove,
-            SlotConfig,
+            TemplateConfig,
             RenderCommonElements,
             NavigationDrawer,
             TooltipIconBtn,

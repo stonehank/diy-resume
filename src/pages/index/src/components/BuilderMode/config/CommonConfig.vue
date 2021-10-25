@@ -88,6 +88,7 @@
                     v-model="newComponentData.styleConfig.lineHeightInherit"
             />
         </CommonInputConfig>
+        <!-- https://github.com/parallax/jsPDF/issues/3137#issuecomment-886480913 -->
         <CommonInputConfig class="col-12 col-md-6 col-lg-4"
                            :min="-4"
                            label="Letter Spacing"

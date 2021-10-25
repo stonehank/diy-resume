@@ -15,7 +15,7 @@ import ConfigEle from "../../src/pages/index/src/components/BuilderMode/config/c
 import CommonColorConfig from "../../src/pages/index/src/components/BuilderMode/config/components/CommonColorConfig"
 import PositionConfig from "../../src/pages/index/src/components/BuilderMode/config/PositionConfig"
 import BorderConfig from "../../src/pages/index/src/components/BuilderMode/config/BorderConfig"
-import SlotConfig from "../../src/pages/index/src/components/BuilderMode/config/SlotConfig"
+import TemplateConfig from "../../src/pages/index/src/components/BuilderMode/config/TemplateConfig"
 
 let vuetify=new Vuetify()
 const router = new VueRouter()
@@ -212,20 +212,20 @@ describe('BuilderMode Initial', () => {
         }
     })
 
-    it('swap to slot config tab',   (done) => {
+    it('swap to template config tab',   (done) => {
         let paragraphWrapper=wrapper.findComponent(DIYRender).findComponent(RenderParagraph).findComponent(StyleWrapper)
         let configEle=paragraphWrapper.findComponent(ConfigEle)
         configEle.setData({tab:3})
         setTimeout(()=>{
-            expect(wrapper.findComponent(SlotConfig).exists()).toBe(true)
+            expect(wrapper.findComponent(TemplateConfig).exists()).toBe(true)
             done()
         },200)
     })
 
     it('some feature in border config tab',  async () => {
-        let slotConfig=wrapper.findComponent(SlotConfig)
-        let slotInput=slotConfig.find('[data-test=slot-input]')
+        let templateConfig=wrapper.findComponent(TemplateConfig)
+        let slotInput=templateConfig.find('[data-test=slot-input]')
         await slotInput.setValue('test-slot')
-        expect(slotConfig.vm.newComponentData.slot).toEqual('test-slot')
+        expect(templateConfig.vm.newComponentData.template_slug).toEqual('test-slot')
     })
 })

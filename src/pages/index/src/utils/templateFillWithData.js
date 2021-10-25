@@ -20,13 +20,13 @@ function resolveFillData(templateList,personalInfo,alreadyInsert={}){
     }=resolveKeyList(personalInfo)
     for(let i=0;i<templateList.length;i++){
         let dataObj=templateList[i]
-        // console.log(dataObj.name,dataObj.slot,arrayKeyList)
-        if(dataObj.name==='sheet' && dataObj.slot && arrayKeyList.includes(dataObj.slot)){
+        // console.log(dataObj.name,dataObj.template_slug,arrayKeyList)
+        if(dataObj.name==='sheet' && dataObj.template_slug && arrayKeyList.includes(dataObj.template_slug)){
             // 添加页面模板循环
-            let key=dataObj.slot
+            let key=dataObj.template_slug
             if(personalInfo[key].length===0)continue
-            if(!alreadyInsert[dataObj.slot]){
-                alreadyInsert[dataObj.slot]=true
+            if(!alreadyInsert[dataObj.template_slug]){
+                alreadyInsert[dataObj.template_slug]=true
                 for(let j=0;j<personalInfo[key].length;j++){
                     let newModalSheet=deepClone(dataObj)
                     newModalSheet.id=uuidv4()
@@ -39,30 +39,30 @@ function resolveFillData(templateList,personalInfo,alreadyInsert={}){
                     }
                 }
             }
-            // if(dataObj.slot==='employments')debugger
+            // if(dataObj.template_slug==='employments')debugger
             dataObj.children=resolveFillData(dataObj.children,personalInfo[key][dataObj.index],alreadyInsert)
         }else if(dataObj.name==='sheet'){
             // 普通页面模板，直接进入
             dataObj.children=resolveFillData(dataObj.children,personalInfo,alreadyInsert)
-        }else if(dataObj.slot
+        }else if(dataObj.template_slug
             // 在employments内部，description是数组，但是可以直接赋值
-            // && normalKeyList.includes(dataObj.slot)
+            // && normalKeyList.includes(dataObj.template_slug)
         ){
-            if(dataObj.slot==='period'){
+            if(dataObj.template_slug==='period'){
                 dataObj.config.value=resolveDate(personalInfo.startAt,personalInfo.endAt)
-            }else if(dataObj.slot==='link'){
-                dataObj.config.value=personalInfo[dataObj.slot].value
-                dataObj.config.href=personalInfo[dataObj.slot].href
-            }else if(dataObj.slot==='email'){
-                dataObj.config.value=personalInfo[dataObj.slot]
+            }else if(dataObj.template_slug==='link'){
+                dataObj.config.value=personalInfo[dataObj.template_slug].value
+                dataObj.config.href=personalInfo[dataObj.template_slug].href
+            }else if(dataObj.template_slug==='email'){
+                dataObj.config.value=personalInfo[dataObj.template_slug]
                 if(dataObj.name==='anchor'){
-                    dataObj.config.href='mailto:'+personalInfo[dataObj.slot]
+                    dataObj.config.href='mailto:'+personalInfo[dataObj.template_slug]
                 }
-            }else if(dataObj.slot==='progress'){
+            }else if(dataObj.template_slug==='progress'){
                 dataObj.config.label=personalInfo.label
                 dataObj.config.value=personalInfo.value
             }else{
-                dataObj.config.value=personalInfo[dataObj.slot]
+                dataObj.config.value=personalInfo[dataObj.template_slug]
             }
 
         }

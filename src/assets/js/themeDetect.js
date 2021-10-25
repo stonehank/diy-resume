@@ -10,7 +10,8 @@ $(document).ready(()=>{
 function changeTheme(theme){
   let curTheme=theme
   if(curTheme==null){
-    curTheme=getFromCache('theme-color') || 'light'
+    // curTheme=getFromCache('theme-color') || 'light'
+    curTheme='light'
   }
   _change(curTheme)
 }

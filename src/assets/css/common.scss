@@ -14,7 +14,9 @@ a {
   &:active {color:var(--text-primary)}
 }
 
-
+* {
+  letter-spacing: initial !important;
+}
 .v-application--wrap{
   min-height:auto !important;
 }

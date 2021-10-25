@@ -132,7 +132,7 @@
                         <v-spacer></v-spacer>
                         <v-btn color="success" small @click="saveConfig">Save</v-btn>
                     </template>
-                    <template v-slot:slot_config>
+                    <template v-slot:template_config>
                         <SlotConfig v-model="curData"></SlotConfig>
                     </template>
                     <template v-slot:border_config>

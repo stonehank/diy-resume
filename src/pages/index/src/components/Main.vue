@@ -1,19 +1,18 @@
 <template>
-    <v-app>
-        <div class="diy-wrapper">
+    <div class="diy-wrapper">
+        <v-app>
             <transition name="fade">
                 <router-view style="transition:.5s;" ></router-view>
             </transition>
             <div id="taskInfoModalWrap"></div>
             <div id="hidden-page"></div>
-        </div>
-    </v-app>
+        </v-app>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "Main",
-        props:["curLang"],
+        name: "Main"
     }
 </script>
 

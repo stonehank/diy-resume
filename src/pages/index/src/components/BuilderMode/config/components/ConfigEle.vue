@@ -12,7 +12,7 @@
                     <v-tab>Config</v-tab>
                     <v-tab>Position Config</v-tab>
                     <v-tab>Border</v-tab>
-                    <v-tab>Slot</v-tab>
+                    <v-tab>Template</v-tab>
                 </v-tabs>
                 <v-tabs-items v-model="tab">
                     <v-tab-item>
@@ -25,7 +25,7 @@
                         <slot name="border_config"></slot>
                     </v-tab-item>
                     <v-tab-item>
-                        <slot name="slot_config"></slot>
+                        <slot name="template_config"></slot>
                     </v-tab-item>
                 </v-tabs-items>
             </v-card-text>

@@ -1,4 +1,4 @@
-import Home from "../../src/pages/index/src/Home"
+import Home from "../../src/pages/index/src/components/Home"
 import { createLocalVue, mount } from '@vue/test-utils'
 // import {getFromCache, setCache} from "../../src/pages/index/src/utils/cacheControl"
 import {COOKIE_INFO_SHOW} from '../../src/pages/index/src/utils/CONSTANT'

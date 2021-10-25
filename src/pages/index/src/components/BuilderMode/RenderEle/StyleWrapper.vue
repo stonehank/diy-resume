@@ -62,7 +62,7 @@
                             <slot name="position-config"></slot>
                         </BorderConfig>
                     </template>
-                    <template v-slot:slot_config>
+                    <template v-slot:template_config>
                         <SlotConfig v-model="curData">
                         </SlotConfig>
                     </template>

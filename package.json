@@ -6,6 +6,7 @@
 	"scripts": {
 		"test": "jest --silent",
 		"build": "cross-env NODE_ENV=production webpack --colors",
+		"build:plugin": "cross-env NODE_ENV=production webpack --colors --config webpack.plugin.config.js",
 		"start": "npm run locales && cross-env NODE_ENV=development webpack-dev-server --open",
 		"dll": "cross-env NODE_ENV=production webpack --colors --progress --config webpack.dll.config.js",
 		"locales": "node locales/autoFillLocales.js"
@@ -24,7 +25,7 @@
 		"html2canvas": "^1.0.0-rc.7",
 		"jquery": "^3.4.1",
 		"js-cookie": "^2.2.1",
-		"jspdf": "^2.3.1",
+		"jspdf": "^2.4.0",
 		"localforage": "^1.9.0",
 		"react": "^17.0.2",
 		"react-beautiful-dnd": "^13.1.0",

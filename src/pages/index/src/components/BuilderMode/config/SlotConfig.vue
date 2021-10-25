@@ -2,7 +2,7 @@
     <div class="row">
         <slot></slot>
         <div class="col-12 d-flex align-center">
-            <label style="font-size:1.2rem">Slot Style</label>
+            <label style="font-size:1.2rem">Slug</label>
         </div>
         <div class="col-12 d-flex align-center">
             <v-text-field data-test="slot-input" outlined dense hide-details v-model="newComponentData.slot" />

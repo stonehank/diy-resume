@@ -41,6 +41,7 @@ function slimPageData(pageData,arrayKeyList){
                     curComponentData.config.value=50
                     break
                 default:
+                    console.log(curComponentData.template_slug,curComponentData.config)
                     curComponentData.config.value=''
                     break
             }

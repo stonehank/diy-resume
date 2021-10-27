@@ -2,7 +2,7 @@
 
 ### 使用
 
-[体验](http://stonehank.github.io/diy-resume-live/)
+[体验](http://stonehank.github.io/diy-resume/)
 
 > 提示：在桌面端开启可显示步骤教程（包括每个区域的作用）
 

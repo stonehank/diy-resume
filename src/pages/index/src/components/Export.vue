@@ -52,6 +52,7 @@
                 let $ele=$('#preview-export').clone(true,true)
                 let $exportEle=$('<div class="diy-export-wrapper"></div>')
                 $exportEle.append($ele)
+                $ele.removeAttr('style')
                 $ele.css({
                     transform:'scale(1)',
                 })
@@ -95,6 +96,8 @@
                     format:[Math.ceil($exportEle.outerWidth()),$exportEle.outerHeight()+1],
                 })
                 doc.setFont(getFont(),'normal');
+                // doc.addFont(require('assetsDir/fonts/fontawesome-webfont.ttf'), 'FontAwesome', 'normal', 'StandardEncoding');
+                // doc.setFont('FontAwesome');
                 doc.html($exportEle[0], {
                     callback: function (doc) {
                         doc.save('resume-download.pdf')

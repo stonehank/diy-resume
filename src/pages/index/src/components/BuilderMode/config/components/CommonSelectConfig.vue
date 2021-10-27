@@ -1,21 +1,33 @@
 <template>
-    <div>
-        <div class="d-flex align-center justify-space-between">
-            <label>{{label}}</label>
-            <slot name="header"></slot>
-        </div>
-        <div>
-            <v-btn text v-if="showStaticText" small>
-                {{newConfigData}}
-            </v-btn>
-            <v-select
-                    v-else
-                    :items="items"
-                    v-model="newConfigData"
-                    dense
-                    hide-details>
-            </v-select>
-        </div>
+    <div class="d-flex flex-column align-start">
+        <label>{{label}}</label>
+        <slot name="header"></slot>
+        <v-btn text v-if="showStaticText" small>
+            {{newConfigData}}
+        </v-btn>
+        <v-select
+                v-else
+                :items="items"
+                v-model="newConfigData"
+                dense
+                hide-details>
+        </v-select>
+<!--        <div class="d-flex align-center justify-space-between">-->
+<!--            <label>{{label}}</label>-->
+<!--            <slot name="header"></slot>-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <v-btn text v-if="showStaticText" small>-->
+<!--                {{newConfigData}}-->
+<!--            </v-btn>-->
+<!--            <v-select-->
+<!--                    v-else-->
+<!--                    :items="items"-->
+<!--                    v-model="newConfigData"-->
+<!--                    dense-->
+<!--                    hide-details>-->
+<!--            </v-select>-->
+<!--        </div>-->
     </div>
 </template>
 

@@ -13,9 +13,61 @@
                     :saveAsTemplateJSON="saveAsTemplateJSON"
             />
         </Controller>
+        <HighlightTutorial
+                v-if="+$mq>=1260"
+                pageId="build-mode"
+                :steps="[
+                   {
+                       element:'.build-mode-build-wrapper',
+                       position:'left',
+                       scrollTo:0,
+                       intro:'构建区域可以拖拽组件进来，在此区域的组件可以进行属性编辑'
+                   },
+                   {
+                       element:'.build-mode-tools-wrapper',
+                       intro:'可使用的组件区域，目前提供了7种',
+                   },
+                   {
+                       element:'.build-mode-custom-wrapper',
+                       intro:'将组件组合保存为一个模块，会在这里显示，通过拖拽直接调用，此处预先配置了教育、工作和项目模块',
+                   },
+                   {
+                       element:'.build-mode-preview',
+                       intro:'预览区，实时显示，所见即所得',
+                   },
+                   {
+                       element:'.tutorial-font-select',
+                       intro:'选择字体，目前提供了3种中文字体，3种英文字体',
+                   },
+                   {
+                       element:'.tutorial-build-mode-autosave',
+                       intro:'开启自动保存，勾选情况下，每一次构建变更都会自动保存为一个名为autosave的存档',
+                   },
+                   {
+                       element:'.tutorial-build-mode-quick-edit',
+                       intro:'开启快速编辑，勾选情况下，可以快速编辑内容',
+                   },
+                   {
+                       element:'.tutorial-build-mode-save-in-cache',
+                       intro:'将当前构建手动命名保存，重名会提示覆盖',
+                   },
+                   {
+                       element:'.tutorial-build-mode-cache',
+                       intro:'查看本地所有的保存记录',
+                   },
+                   {
+                       element:'.tutorial-build-mode-import',
+                       intro:'通过JSON文件导入构建',
+                   },
+                   {
+                       element:'.tutorial-build-mode-export',
+                       intro:'导出为PDF, IMAGE或者JSON',
+                   },
+                ]"
+        />
         <div class="page-wrapper h-100">
             <h2>Resume Builder</h2>
-            <div id="page">
+            <div id="page" class="build-mode-build-wrapper">
                 <DIYRender :removeElement="removeElement"
                            :updatePageList="updatePageList"
                            :group="group"
@@ -27,12 +79,12 @@
         </div>
         <PerfectScrollbar class="tools-wrapper" :options="{wheelPropagation:false}">
             <h2>Builder unit</h2>
-            <DIYTools :group="group" :componentList="toolList" />
-            <CustomTemplate :group="group" :componentList="customTemplate" :removeCustomTemplate="removeCustomTemplate"/>
+            <DIYTools class="build-mode-tools-wrapper" :group="group" :componentList="toolList" />
+            <CustomTemplate class="build-mode-custom-wrapper" :group="group" :componentList="customTemplate" :removeCustomTemplate="removeCustomTemplate"/>
         </PerfectScrollbar>
         <div class="preview-wrapper">
             <h2>Preview</h2>
-            <PreviewPage id="preview-export" :pageData="pageData" :scale="previewScale" />
+            <PreviewPage id="preview-export" class="build-mode-preview" :pageData="pageData" :scale="previewScale" />
         </div>
         <ResumeCache :showAtMounted="type==='builder'"
                      :pageData="pageData"
@@ -69,49 +121,18 @@
     import CustomTemplate from "./CustomTemplate/index"
     import BuilderController from "./BuilderController"
     import Controller from "../Controller"
-    import pageConvertTemplate from "../../utils/pageConvertTemplate"
+    import pageDataToTemplate from "../../utils/data/pageData-to-template"
     import { saveAs } from 'file-saver';
     import * as defaultCustomBuilder from './CustomTemplate/useful-builder'
-
-    let defaultGapConfig={
-        margin:[0,0,0,0],
-        padding:[0,0,0,0],
-        borderTopWidth:0,
-        borderRightWidth:0,
-        borderBottomWidth:0,
-        borderLeftWidth:0,
-        borderColor:'#888',
-        borderTopLeftRadius:4,
-        borderTopRightRadius:4,
-        borderBottomRightRadius:4,
-        borderBottomLeftRadius:4,
-        borderStyle:'solid',
-        position:'static',
-        top:'auto',
-        left:'auto',
-        right:'auto',
-        bottom:'auto',
-        lineHeight:'inherit',
-        letterSpacing:'inherit',
-        textAlign:'inherit',
-        color:'inherit',
-        fontSize:'inherit',
-        background:'inherit',
-        fontWeight: 'inherit',
-        fontStyle:'inherit',
-        colorInherit:true,
-        fontSizeInherit:true,
-        backgroundInherit:true,
-        lineHeightInherit:true,
-        letterSpacingInherit:true,
-        textAlignInherit:true,
-        fontWeightInherit: true,
-        fontStyleInherit:true,
-        transform:null
-    }
+    import HighlightTutorial from "../commons/HighlightTutorial"
+    import commonStyleConfig from "../../utils/data/commonStyleConfig"
+    import convertToValidPageData from "../../utils/data/convertToValidPageData"
+    // import convertToValidPageData from "../../utils/data/convertToValidPageData"
     export default {
         name: "BuilderMode",
-        components: {Controller, BuilderController, CustomTemplate, PreviewPage, ResumeCache, DIYTools, DIYRender},
+        components: {
+            HighlightTutorial,
+            Controller, BuilderController, CustomTemplate, PreviewPage, ResumeCache, DIYTools, DIYRender},
         data(){
             return {
                 group:'diy-resume',
@@ -123,7 +144,7 @@
                         droppable:true,
                         children:[],
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             col:12,
 
@@ -135,7 +156,7 @@
                         id:uuidv4(),
                         name:'paragraph',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             col:12,
                         },
@@ -151,7 +172,7 @@
                         id:uuidv4(),
                         name:'list',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             padding:[0,0,0,36],
                             col:12,
@@ -169,7 +190,7 @@
                         id:uuidv4(),
                         name:'anchor',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             col:12,
                         },
@@ -187,7 +208,7 @@
                         id:uuidv4(),
                         name:'progress',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             col:12,
                         },
@@ -208,7 +229,7 @@
                         id:uuidv4(),
                         name:'tag',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             padding:[8,6,8,6],
                             textAlign:'center',
@@ -234,7 +255,7 @@
                         id:uuidv4(),
                         name:'image',
                         styleConfig:{
-                            ...defaultGapConfig,
+                            ...commonStyleConfig,
                             height:'auto',
                             col:'auto',
                         },
@@ -266,7 +287,7 @@
                 this.type=type
             }
             if (pageStr) {
-                this.pageData = JSON.parse(pageStr)
+                this.pageData = convertToValidPageData(JSON.parse(pageStr))
             }
         },
         mounted(){
@@ -294,7 +315,7 @@
             updatePageList(clonedDataList,saveInCache=true){
                 // Noted: nextTimeSaveInCache use when load from cache, should be false
                 this.nextTimeSaveInCache=saveInCache
-                this.pageData=clonedDataList
+                this.pageData=convertToValidPageData(clonedDataList)
             },
             removeElement(indexList){
                 let finalList=this.pageData
@@ -381,7 +402,7 @@
             },
             saveAsTemplateJSON(){
                 let jsonFile={
-                    template:pageConvertTemplate(this.pageData),
+                    template:pageDataToTemplate(this.pageData),
                     time:new Date().getTime(),
                     version:pageConfig.version
                 }

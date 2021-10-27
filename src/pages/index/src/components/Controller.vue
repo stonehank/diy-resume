@@ -9,7 +9,14 @@
             height="auto"
     >
         <Navigation />
-        <v-select style="max-width:250px;" dense hide-details outlined label="Choose font"
+        <v-select style="max-width:250px;"
+                  class="tutorial-font-select"
+                  dense
+                  hide-details
+                  outlined
+                  label="Choose font"
+                  item-value="val"
+                  item-text="name"
                   :items="familyList"
                   v-model="curSelectFamily"
         />
@@ -26,7 +33,14 @@
         data(){
             return {
                 curSelectFamily:null,
-                familyList:['AnonymousPro-Regular','Arial','Cormorant-Regular','Itim-Regular','monaco','Roboto-Regular']
+                familyList:[
+                    {name:'方正宋刻',val:'fangzheng-songke'},
+                    {name:'罗西钢笔行楷',val:'gangbi-kaiti'},
+                    {name:'胡晓波美心',val:'huxiaobo-meixin'},
+                    {name:'AnonymousPro',val:'AnonymousPro-Regular'},
+                    {name:'monaco',val:'monaco'},
+                    {name:'Arial',val:'Arial'},
+                ]
             }
         },
         watch:{

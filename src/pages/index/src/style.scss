@@ -15,6 +15,9 @@ $toolsWrapperW:280px;
   *:not([class*=fa-]) {
     font-family: inherit;
   }
+  //i[class*=fa-]{
+  //  font-family: 'FontAwesome';
+  //}
 
   label:not(.v-label) {
     font-size: 16px;
@@ -113,6 +116,14 @@ $toolsWrapperW:280px;
       top:0;
       right:4px;
       z-index: 5;
+      .v-btn--icon{
+        height: 12px;
+        width: 14px;
+      }
+      .v-btn--icon.v-size--x-small .v-icon, .v-btn--fab.v-size--x-small .v-icon{
+        height:12px;
+        width:12px;
+      }
     }
     .element-mask{
       position:absolute;

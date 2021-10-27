@@ -8,6 +8,6 @@ export function setFont(font){
 
 }
 
-export function getFont(font){
+export function getFont(){
     return currentFont
 }

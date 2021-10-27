@@ -119,6 +119,7 @@
     import PreviewPage from "./PreviewPage/index"
     import calcPreviewSizeScale from "../../utils/calcPreviewSizeScale"
     import {BUILDER_CACHE_PREFIX} from '../../utils/CONSTANT'
+    import convertToValidPageData from "../../utils/data/convertToValidPageData"
     export default {
         name: "ResumeCache",
         components: {PreviewPage},
@@ -187,7 +188,7 @@
             loadFromCookie(){
                 return getAllCache().then((allCacheObj)=>{
                     this.cacheList=[]
-                    console.log(allCacheObj)
+                    // console.log(allCacheObj)
                     for(let key in allCacheObj){
                         if(key.startsWith(this.cacheCookieName)){
                             if(key===this.cacheCookieName+'autosave'){

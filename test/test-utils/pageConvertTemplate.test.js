@@ -1,5 +1,5 @@
-import pageConvertTemplate from "../../src/pages/index/src/utils/pageConvertTemplate"
-import templateFillWithData from "../../src/pages/index/src/utils/templateFillWithData"
+import pageDataToTemplate from "../../src/pages/index/src/utils/data/pageData-to-template"
+import templateToPageData from "../../src/pages/index/src/utils/data/template-to-pagedata"
 import {pageData, personInfo, templateData} from '../mock-data'
 
 function replaceIdInTest(obj){
@@ -10,10 +10,10 @@ describe('Test page convert template and reverse', () => {
 
 
     it('page convert to template',()=>{
-        expect(replaceIdInTest(pageConvertTemplate(pageData))).toEqual(templateData.template)
+        expect(replaceIdInTest(pageDataToTemplate(pageData))).toEqual(templateData.template)
     })
 
     it('personalData and template convert to page',()=>{
-        expect(replaceIdInTest(templateFillWithData(templateData,personInfo))).toEqual(pageData)
+        expect(replaceIdInTest(templateToPageData(templateData,personInfo))).toEqual(pageData)
     })
 })

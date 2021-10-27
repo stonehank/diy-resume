@@ -8,7 +8,7 @@
                    :color="color"
                    @click.stop.prevent="clickEvent"
             >
-                <v-icon x-small>{{icon}}</v-icon>
+                <v-icon size="12">{{icon}}</v-icon>
             </v-btn>
         </template>
         <span>{{tips}}</span>

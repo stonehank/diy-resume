@@ -1,9 +1,10 @@
 <template>
-    <div>
-        <div class="d-flex align-center justify-space-between">
-            <label>{{label}}</label>
-            <slot name="header"></slot>
-        </div>
+    <div class="d-flex flex-column align-start">
+        <label>{{label}}</label>
+        <slot name="header"></slot>
+<!--        <div class="d-flex align-center justify-space-between">-->
+<!--          -->
+<!--        </div>-->
         <v-btn text v-if="showStaticText" small>
             {{newConfigData}}
         </v-btn>

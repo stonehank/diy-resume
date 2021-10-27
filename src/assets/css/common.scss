@@ -16,7 +16,21 @@ a {
 
 * {
   letter-spacing: initial !important;
+   word-break: break-word;
 }
 .v-application--wrap{
   min-height:auto !important;
+  div[style*="text-align: right"]{
+    .draggable-custom-item{
+      float:right !important;
+    }
+  }
+  div[style*="text-align: center"]{
+    .draggable-custom-item{
+      float: none !important;
+      display: inline-block;
+    }
+  }
 }
+
+

@@ -124,17 +124,21 @@ module.exports= {
         },
         {
           test: /\.svg$/i,
-          include: dirVars.assetsDir,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: 'assets/vector/[name]-[contenthash:8].[ext]',
-                publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
-              },
-            },
-          ],
+          loader: 'vue-svg-loader', // `vue-svg` for webpack 1.x
         },
+        // {
+        //   test: /\.svg$/i,
+        //   include: dirVars.assetsDir,
+        //   use: [
+        //     {
+        //       loader: 'file-loader',
+        //       options: {
+        //         name: 'assets/vector/[name]-[contenthash:8].[ext]',
+        //         publicPath: isDev ? '/' : (publicPath==='' ? '/' : publicPath)
+        //       },
+        //     },
+        //   ],
+        // },
         {
           test: /\.ico$/i,
           include: dirVars.assetsDir,

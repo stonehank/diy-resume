@@ -11,6 +11,7 @@
                 />
             </div>
             <v-text-field
+                    class="d-flex align-end"
                     label="value"
                     hide-details
                     v-model="newComponentData.config.value"
@@ -98,5 +99,7 @@
 </script>
 
 <style scoped>
-
+    ::v-deep .v-input__prepend-outer, ::v-deep .v-input__append-outer{
+        margin-bottom:0 !important;
+    }
 </style>

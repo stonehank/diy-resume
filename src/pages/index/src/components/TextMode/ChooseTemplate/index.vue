@@ -16,7 +16,7 @@
                     style="position:relative;margin:auto;"
                     :style="{height:previewCardH+'px',width:previewCardW+'px'}"
             >
-                <PreviewPage :page-data="templateFillWithData(template,personalInfo)" :scale="previewScale" >
+                <PreviewPage :page-data="templateToPageData(template,personalInfo)" :scale="previewScale" >
                 </PreviewPage>
             </v-card>
         </PerfectScrollbar>
@@ -26,7 +26,7 @@
 <script>
 
     import PreviewPage from "../../BuilderMode/PreviewPage/index"
-    import templateFillWithData from '../../../utils/templateFillWithData'
+    import templateToPageData from '../../../utils/data/template-to-pagedata'
     import calcPreviewSizeScale from "../../../utils/calcPreviewSizeScale"
     export default {
         name: "ChooseTemplate",
@@ -38,7 +38,7 @@
             importFile:Function
         },
         computed:{
-            templateFillWithData:()=>templateFillWithData
+            templateToPageData:()=>templateToPageData
         },
         mounted(){
             this.calcPreviewSize()

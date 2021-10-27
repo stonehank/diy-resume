@@ -133,4 +133,4 @@ function __setCacheLightweight(key,value,expires=7){
 }
 
 
-export {getFromCache,setCache,getAllCache,removeCache}
+export {getFromCache,setCache,getAllCache,removeCache,__getFromCacheLightweight,__setCacheLightweight}

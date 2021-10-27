@@ -3,8 +3,10 @@
         <v-spacer></v-spacer>
         <div style="position:relative;">
             <div v-if="+$mq >= 1264" class="d-flex align-center">
-                <Export v-if="showExport" />
-                <v-btn data-test="choose-template-btn" class="mr-2" color="success" small @click="showTemplateList">Choose a template</v-btn>
+                <div class="text-mode-export">
+                    <Export v-if="showExport" />
+                </div>
+                <v-btn data-test="choose-template-btn" class="mr-2 text-mode-choose-template" color="success" small @click="showTemplateList">Choose a template</v-btn>
             </div>
             <v-menu
                     v-else

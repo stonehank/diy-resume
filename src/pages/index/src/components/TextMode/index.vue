@@ -8,11 +8,39 @@
                     :showExport="selectedTemplate!=null"
             />
         </Controller>
+        <HighlightTutorial
+                v-if="+$mq>=1260"
+                pageId="text-mode"
+                :closed="resetTemplate"
+                :steps="[
+                   {
+                       element:'.text-mode-fill-data-wrapper',
+                       position:'left',
+                       scrollTo:0,
+                       intro:'填写你的简历信息'
+                   },
+                   {
+                       element:'.text-mode-choose-template',
+                       intro:'选择一个模板',
+                   },
+                   {
+                       element:'.text-mode-template-wrapper',
+                       intro:'内容填充到模板',
+                       before:()=>{
+                           this.updateSelectTemplate(this.templateList[0])
+                       }
+                   },
+                   {
+                       element:'.text-mode-export',
+                       intro:'导出PDF或者图片',
+                   },
+                ]"
+        />
         <v-row>
             <v-col cols="12" lg="6">
-                <FillYourData v-model="personalInfo" />
+                <FillYourData v-model="personalInfo" class="text-mode-fill-data-wrapper" />
             </v-col>
-            <v-col v-if="+$mq>=1264"
+            <v-col v-if="+$mq>=1260"
                    cols="12"
                    lg="6"
                    class="px-6 py-8"
@@ -23,6 +51,7 @@
                 <v-hover v-slot="{hover}">
                     <PreviewPage :pageData="pageData"
                                  id="preview-export"
+                                 class="text-mode-template-wrapper"
                                  :style="`left:50%;border:1px solid var(--text-muted);transform:scale(${previewScale}) translateX(-50%);`" >
                         <v-overlay
                                 absolute
@@ -102,8 +131,8 @@
     import PreviewPage from "../BuilderMode/PreviewPage/index"
     import {getFromCache, setCache} from "../../utils/cacheControl"
     import {PERSONAL_INFO} from "../../utils/CONSTANT"
-    import templateFillWithData from '../../utils/templateFillWithData'
-    import personalInfoEmpty from '../../utils/personalInfoEmpty'
+    import templateToPageData from '../../utils/data/template-to-pagedata'
+    import personalInfoDataEmpty from '../../utils/data/personalInfoDataEmpty'
     import deepClone from 'clone-deep'
     import BuilderMode from "../BuilderMode/index"
     import NavigationDrawer from "../commons/NavigationDrawer"
@@ -114,9 +143,11 @@
     import Controller from "../Controller"
     import Export from "../Export"
     import calcPreviewSizeScale from "../../utils/calcPreviewSizeScale"
+    import HighlightTutorial from "../commons/HighlightTutorial"
     export default {
         name: "TextMode",
         components: {
+            HighlightTutorial,
             Export,
             Controller,
             TextModeController,
@@ -138,7 +169,7 @@
                 templateListShowing:false,
                 showBuilder:false,
                 personalCookieKey:PERSONAL_INFO,
-                personalInfo:deepClone(personalInfoEmpty),
+                personalInfo:deepClone(personalInfoDataEmpty),
                 pageData:[],
                 templateList:Object.values(templates),
                 selectedTemplate:null,
@@ -152,7 +183,7 @@
                 deep:true,
                 handler(newV){
                     setCache(this.personalCookieKey,newV)
-                    if(this.selectedTemplate)this.pageData=templateFillWithData(this.selectedTemplate,this.personalInfo)
+                    if(this.selectedTemplate)this.pageData=templateToPageData(this.selectedTemplate,this.personalInfo)
                 }
             }
         },
@@ -198,9 +229,13 @@
                 this.previewScale=previewScale
                 if(+this.$mq<1260)this.previewCardH+=64
             },
+            resetTemplate(){
+                this.selectedTemplate=null
+                this.pageData=null
+            },
             updateSelectTemplate(template){
                 this.selectedTemplate=template
-                this.pageData=templateFillWithData(template,this.personalInfo)
+                this.pageData=templateToPageData(template,this.personalInfo)
                 this.hideTemplateList()
             },
             importFile(){

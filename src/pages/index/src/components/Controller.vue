@@ -52,7 +52,7 @@
             },
         },
         mounted(){
-            this.curSelectFamily='Arial'
+            this.curSelectFamily='fangzheng-songke'
         },
         methods:{
             changeFontFamily(family){

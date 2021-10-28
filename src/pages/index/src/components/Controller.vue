@@ -56,7 +56,8 @@
         },
         methods:{
             changeFontFamily(family){
-                $('body,.v-application').css('font-family',`${family}`)
+                // $('body,.v-application').css('font-family',`${family}`)
+                $('.diy-export-wrapper, #page, #preview-export').css('font-family',`${family}`)
             },
         }
     }

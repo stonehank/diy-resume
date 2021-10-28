@@ -52,11 +52,13 @@
                 let $ele=$('#preview-export').clone(true,true)
                 let $exportEle=$('<div class="diy-export-wrapper"></div>')
                 $exportEle.append($ele)
+                let curFont=$ele.css('font-family')
                 $ele.removeAttr('style')
                 $ele.css({
                     transform:'scale(1)',
                 })
                 $exportEle.css({
+                    fontFamily:curFont,
                     position: 'fixed',
                     zIndex: -999,
                     left: 0,
@@ -66,7 +68,7 @@
                 return $exportEle
             },
             afterExport($exportEle){
-                $exportEle.remove()
+                // $exportEle.remove()
             },
             printImage(){
                 let $exportEle=this.beforeExport()

@@ -11,16 +11,22 @@
                 :drawerShow="menuShowing"
                 @input="updateMenuShowing"
         >
-            <v-list-item>
-               <v-list-item-content>
-                   <v-list-item-title>
-                       Resume DIY
-                   </v-list-item-title>
-                   <v-list-item-subtitle>
-                       stonehank
-                   </v-list-item-subtitle>
-               </v-list-item-content>
-            </v-list-item>
+            <div class="d-flex align-center justify-center pr-3">
+                <v-list-item>
+                    <v-list-item-content>
+                        <v-list-item-title>
+                            Resume DIY
+                        </v-list-item-title>
+                        <v-list-item-subtitle>
+                            stonehank
+                        </v-list-item-subtitle>
+                    </v-list-item-content>
+                </v-list-item>
+                <v-btn text large href="https://github.com/stonehank/diy-resume">
+                    <v-icon large>fab fa-github</v-icon>
+                </v-btn>
+            </div>
+
             <v-divider></v-divider>
             <v-list
                     dense

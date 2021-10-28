@@ -13,13 +13,13 @@
                         flat
                         vertical
                 >
-                    <v-stepper-step step="1">Type to fill your personal information</v-stepper-step>
+                    <v-stepper-step step="1">填写你的个人信息</v-stepper-step>
                     <v-stepper-content step="1"></v-stepper-content>
 
-                    <v-stepper-step step="2">Choose a template</v-stepper-step>
+                    <v-stepper-step step="2">选择一个模板</v-stepper-step>
                     <v-stepper-content step="2"></v-stepper-content>
 
-                    <v-stepper-step step="3" complete>Export, well done!</v-stepper-step>
+                    <v-stepper-step step="3" complete>导出，大功告成！</v-stepper-step>
                     <v-stepper-content step="2"></v-stepper-content>
                 </v-stepper>
             </div>
@@ -38,13 +38,13 @@
                         flat
                         vertical
                 >
-                    <v-stepper-step step="1">Drag and Drop to build your resume</v-stepper-step>
+                    <v-stepper-step step="1">通过拖拽搭建你的简历</v-stepper-step>
                     <v-stepper-content step="1"></v-stepper-content>
 
-                    <v-stepper-step step="2">Type the text, edit the sizing, position, style...</v-stepper-step>
+                    <v-stepper-step step="2">配置组件属性，包括内容，字体大小，位置等等</v-stepper-step>
                     <v-stepper-content step="2"></v-stepper-content>
 
-                    <v-stepper-step step="3" complete>Export, well done!</v-stepper-step>
+                    <v-stepper-step step="3" complete>导出，大功告成！</v-stepper-step>
                     <v-stepper-content step="2"></v-stepper-content>
                 </v-stepper>
             </div>
@@ -57,10 +57,10 @@
                 type="info"
                 :value="showCookieInfo"
         >
-            <h4>Important notes:</h4>
-            <small>No backend, no data transfer, use <b>{{useIdxDB ? 'IndexedDB' : useLocalStorage ? 'LocalStorage' : 'Cookie'}}</b> to save your personal information only make convenience for the edit.</small>
+            <h4>注意：</h4>
+            <small>无后端，无API请求，通过检测，你的客户端可以使用 <b>{{useIdxDB ? 'IndexedDB' : useLocalStorage ? 'LocalStorage' : 'Cookie'}}</b> 来保存你的构建数据及相关信息</small>
             <v-divider class="my-2"></v-divider>
-            <v-btn @click="showCookieInfo=false" small color="info">Noted</v-btn>
+            <v-btn @click="showCookieInfo=false" small color="info">好的</v-btn>
         </v-alert>
     </div>
 </template>

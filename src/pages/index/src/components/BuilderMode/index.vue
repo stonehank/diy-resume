@@ -66,7 +66,7 @@
                 ]"
         />
         <div class="page-wrapper h-100">
-            <h2>Resume Builder</h2>
+            <h2>构建区</h2>
             <div id="page" class="build-mode-build-wrapper">
                 <DIYRender :removeElement="removeElement"
                            :updatePageList="updatePageList"
@@ -78,12 +78,12 @@
             </div>
         </div>
         <PerfectScrollbar class="tools-wrapper" :options="{wheelPropagation:false}">
-            <h2>Builder unit</h2>
+            <h2>构建工具</h2>
             <DIYTools class="build-mode-tools-wrapper" :group="group" :componentList="toolList" />
             <CustomTemplate class="build-mode-custom-wrapper" :group="group" :componentList="customTemplate" :removeCustomTemplate="removeCustomTemplate"/>
         </PerfectScrollbar>
         <div class="preview-wrapper">
-            <h2>Preview</h2>
+            <h2>预览</h2>
             <PreviewPage id="preview-export" class="build-mode-preview" :pageData="pageData" :scale="previewScale" />
         </div>
         <ResumeCache :showAtMounted="type==='builder'"
@@ -100,11 +100,11 @@
                 :scrollable="true"
         >
             <v-card flat class="pa-4">
-                <p>There are still some children element inside the page, are you sure to remove?</p>
+                <p>当前组件内部还有子组件，确定一并删除吗？</p>
                 <v-card-actions>
-                    <v-btn small @click="hideConfirmModal">No</v-btn>
+                    <v-btn small @click="hideConfirmModal">取消</v-btn>
                     <v-spacer></v-spacer>
-                    <v-btn small color="error" @click="closeModalAndConfirm">Yes</v-btn>
+                    <v-btn small color="error" @click="closeModalAndConfirm">删除</v-btn>
                 </v-card-actions>
             </v-card>
         </modal>

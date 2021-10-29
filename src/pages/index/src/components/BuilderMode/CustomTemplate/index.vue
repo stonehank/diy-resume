@@ -1,6 +1,6 @@
 <template>
     <div class="clearfix" style="position:relative" v-if="componentList.length>0">
-        <h2>Custom Builder Unit</h2>
+        <h2>自定义构建组件</h2>
         <draggable
                 :list="componentList"
                 :group="{ name: group, pull: 'clone', put: false }"

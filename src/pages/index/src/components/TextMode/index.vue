@@ -60,10 +60,10 @@
                             <div v-if="selectedTemplate" class="d-flex flex-column">
                                 <v-btn class="mt-2" @click="goToBuilder" style="background:#fff;" x-large color="info">
                                     <v-icon class="mr-2">fas fa-code</v-icon>
-                                    Builder
+                                    构建模式
                                 </v-btn>
                             </div>
-                            <v-btn v-else x-large class="mr-2" color="success" small @click="showTemplateList">Choose a template</v-btn>
+                            <v-btn v-else x-large class="mr-2" color="success" small @click="showTemplateList">选择一个模板</v-btn>
                         </v-overlay>
                     </PreviewPage>
                 </v-hover>
@@ -94,7 +94,7 @@
                                 transform: 'translate(-50%, -50%)',
                                 }"
                     >
-                        Choose a template
+                        选择一个模板
                     </v-btn>
                 </div>
                 <div class="text-center py-2" v-if="this.selectedTemplate!=null">

@@ -230,6 +230,7 @@
                 this.$parent.saveAsTemplate()
             },
             resolveStrToNum(data,suffix='px'){
+                if(!data)return 'inherit'
                 return data==='inherit' ? data : (typeof data === 'string' ? parseFloat(data) : data)+suffix
             }
         }

@@ -47,7 +47,7 @@ export default {
         id:String,
         cssType:String,
         staticText:{
-            default:"Inherit"
+            default:"inherit"
         },
         showStaticText:{
             default:false

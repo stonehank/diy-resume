@@ -42,7 +42,7 @@ export default {
         cssType:String,
         items:Array,
         staticText:{
-            default:'Inherit'
+            default:'inherit'
         },
         showStaticText:{
             default:false

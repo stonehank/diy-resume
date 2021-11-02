@@ -219,9 +219,9 @@ export default {
         "transform": null,
         "width": "100%",
         "height": "auto",
-        "color": "Inherit",
+        "color": "inherit",
         "fontSize": 16,
-        "background": "Inherit",
+        "background": "inherit",
         "col": 12
     },
     "config": {},

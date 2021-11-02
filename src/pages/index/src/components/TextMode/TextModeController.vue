@@ -6,7 +6,7 @@
                 <div class="text-mode-export">
                     <Export v-if="showExport" />
                 </div>
-                <v-btn data-test="choose-template-btn" class="mr-2 text-mode-choose-template" color="success" small @click="showTemplateList">Choose a template</v-btn>
+                <v-btn data-test="choose-template-btn" class="mr-2 text-mode-choose-template" color="success" small @click="showTemplateList">选择一个模板</v-btn>
             </div>
             <v-menu
                     v-else

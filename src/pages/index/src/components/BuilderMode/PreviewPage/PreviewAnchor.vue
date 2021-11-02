@@ -6,18 +6,28 @@
             :href="componentData.config.href"
             @click.prevent="()=>{}"
     >
-        <i v-if="componentData.config.icon && componentData.config.prependIcon" :class="componentData.config.prependIcon"></i>
+        <GenerateSVGIcon
+                v-if="componentData.config.icon && componentData.config.prependIcon"
+                :icon="componentData.config.prependIcon"
+                :styleConfig="componentData.styleConfig"
+        />
         {{componentData.config.value}}
-        <i v-if="componentData.config.icon && componentData.config.appendIcon" :class="componentData.config.appendIcon"></i>
+        <GenerateSVGIcon
+                v-if="componentData.config.icon && componentData.config.appendIcon"
+                :icon="componentData.config.appendIcon"
+                :styleConfig="componentData.styleConfig"
+        />
+<!--        <i v-if="componentData.config.icon && componentData.config.appendIcon" :class="componentData.config.appendIcon"></i>-->
     </StyleWrapper>
 </template>
 
 <script>
     import PreviewTemplate from "./PreviewTemplate"
     import StyleWrapper from "../RenderEle/StyleWrapper"
+    import GenerateSVGIcon from "../../commons/GenerateSVGIcon"
     export default {
         name: "PreviewAnchor",
-        components: {StyleWrapper},
+        components: {GenerateSVGIcon, StyleWrapper},
         extends:PreviewTemplate,
     }
 </script>

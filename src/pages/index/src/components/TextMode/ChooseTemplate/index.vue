@@ -2,7 +2,7 @@
     <div ref="template-select-list" class="py-2 px-4">
         <v-list-item >
             <v-list-item-content>
-                <v-btn text color="success" @click="importFile">Import template</v-btn>
+                <v-btn text color="success" @click="importFile">导入模板</v-btn>
             </v-list-item-content>
         </v-list-item>
         <v-divider class="mt-0 mb-2"></v-divider>

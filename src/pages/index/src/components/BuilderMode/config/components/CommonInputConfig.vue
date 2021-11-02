@@ -34,7 +34,7 @@ export default {
             default:'md'
         },
         staticText:{
-            default:"Inherit"
+            default:"inherit"
         },
         showStaticText:{
             default:false

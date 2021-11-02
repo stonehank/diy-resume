@@ -6,13 +6,34 @@
             </transition>
             <div id="taskInfoModalWrap"></div>
             <div id="hidden-page"></div>
+            <v-overlay :value="overlay">
+                <v-progress-circular
+                        indeterminate
+                        size="48"
+                ></v-progress-circular>
+            </v-overlay>
         </v-app>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Main"
+        name: "Main",
+        provide() {
+            return {
+                triggerExportLoading: this.triggerExportLoading
+            }
+        },
+        data(){
+            return {
+                overlay:false
+            }
+        },
+        methods:{
+            triggerExportLoading(){
+                this.overlay=!this.overlay
+            }
+        }
     }
 </script>
 

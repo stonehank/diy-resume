@@ -18,6 +18,10 @@ a {
   letter-spacing: initial !important;
    word-break: break-word;
 }
+pre{
+  white-space: pre-wrap;
+  word-break: break-word;
+}
 .v-application--wrap{
   min-height:auto !important;
   div[style*="text-align: right"]{

@@ -165,6 +165,7 @@
                             icon:false,
                             appendIcon:null,
                             prependIcon:null,
+                            textarea:false,
                         },
                         pin:false
                     },

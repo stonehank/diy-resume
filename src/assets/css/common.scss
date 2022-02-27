@@ -15,7 +15,7 @@ a {
 }
 
 * {
-  letter-spacing: initial !important;
+  letter-spacing: 0 !important;
    word-break: break-word;
 }
 pre{
@@ -38,3 +38,10 @@ pre{
 }
 
 
+//@media print {
+//  @page {
+//    /*A4: 210mm × 297mm，size: 794px × 1123px，0边距*/
+//    /*171.9mm × 258.9mm，size：649px × 978px，19.05mm边距（ie浏览器默认打印边距） */
+//    size: 210mm 297mm;
+//  }
+//}

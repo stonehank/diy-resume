@@ -44,6 +44,7 @@
                 exportList:[
                     {name:'Export PDF',event:this.printPDF,color:''},
                     {name:'Export Image',event:this.printImage,color:''},
+                    {name:'Window Print',event:this.windowPrint,color:'primary'},
                 ]
             }
         },
@@ -95,6 +96,17 @@
             afterExport($exportEle){
                 $exportEle.remove()
                 this.triggerExportLoading()
+            },
+            windowPrint(){
+                return this.beforeExport().then(($exportEle)=>{
+                    this.triggerExportLoading()
+                    this.$router.push({
+                        name:'print',
+                        params:{
+                            data_exist:true
+                        }
+                    })
+                })
             },
             printImage(){
                 return this.beforeExport().then(($exportEle)=>{

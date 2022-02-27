@@ -22,7 +22,11 @@ const routes = [
             },
         ]
     },
-
+    {
+        name:'print',
+        path: '/print',
+        component: () => import( '../components/Print'),
+    },
 
 ]
 

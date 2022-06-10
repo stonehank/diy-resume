@@ -93,14 +93,12 @@
                            :min="-4"
                            label="Letter Spacing"
                            suffix="px"
-                           :disabled="true"
                            cssType="letterSpacing"
                            :id="newComponentData.id"
                            v-model="newComponentData.styleConfig.letterSpacing"
                            :showStaticText="newComponentData.styleConfig.letterSpacingInherit"
         >
             <v-checkbox
-                    :disabled="true"
                     slot="header"
                     label="inherit"
                     dense
